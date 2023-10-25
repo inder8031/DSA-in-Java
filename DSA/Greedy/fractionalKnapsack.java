@@ -3,7 +3,7 @@ package chauhan.DSA.Greedy;
 import java.util.Arrays;
 import java.util.Comparator;
 
-class knapSack {
+class fractionalknapSack {
     public static void main(String[]args){
         int val[] = {60, 100, 120};
         int weight[] = {10, 20, 30};
