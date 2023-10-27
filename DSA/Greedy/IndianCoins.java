@@ -3,15 +3,18 @@ package chauhan.DSA.Greedy;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 class IndianCoins {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         Integer coins[] = {1, 2, 5, 10, 20, 50, 100, 200, 500, 2000};
 
         Arrays.sort(coins, Comparator.reverseOrder());
 
         int countOfCoins = 0;
-        int amount = 590;
+        System.out.print("Enter your amount here: ");
+        int amount = sc.nextInt();
         ArrayList<Integer> ans = new ArrayList<>();
 
         for(int i=0; i<coins.length; i++) {
