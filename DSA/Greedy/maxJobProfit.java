@@ -28,7 +28,7 @@ class maxJobProfit {
             jobs.add(new Job(i, jobInfo[i][0], jobInfo[i][1]));
         }
 
-        Collections.sort(jobs, (obj1, obj2) -> obj2.profit - obj1.profit); //sorting in descending order
+        Collections.sort(jobs, (obj1, obj2) -> obj2.profit - obj1.profit); //sorting in descending order of objects using lambda function
 
         ArrayList<Character> jobSeq = new ArrayList<>();
         int time = 0;
